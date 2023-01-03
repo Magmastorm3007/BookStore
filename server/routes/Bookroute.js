@@ -2,6 +2,7 @@ const express=require('express')
 const router =express.Router()
 
 const Book=require('../models/BookModel')
+console.log("ok")
 router.route("/create").post((req,res)=>{
   const title=req.body.title
   const description=req.body.description
